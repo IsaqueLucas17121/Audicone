@@ -1,0 +1,10 @@
+const letras = ['A','u','d','i','c','o','n','e',' ','C','o','n','t','a','d','o','r','e','s'];
+const div = document.getElementById('resultado');
+
+letras.forEach((letra,i) => {
+    const span = document.createElement('h1');
+    span.className = 'letra';
+    span.textContent = letra;
+    span.style.animationDelay = `${i * 0.1}s`;
+    div.appendChild(span);
+});
