@@ -5,17 +5,20 @@
     text-decoration: none;
     list-style: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0ece3;
+    background-color: #F7F7F7;
+    color: 	#333333;
     display: grid;
     align-items: center;
     font-size: 1rem;
     font-weight: 400;
     margin: 0;
     padding-top: 100px;
-    line-height: 1.6;
+    line-height: 1.6;   
 }
 
 header{
@@ -26,8 +29,8 @@ header{
     font-size: 1.2rem;
     padding: 10px 15px;
     justify-content: space-between;
-    background-color: #1a4139;
-    color: #b99a49;
+    background-color: #102924;
+    color: #FFC107;
     align-items: center;
     transition: all 0.6s ease;
     top: 0;
@@ -42,6 +45,7 @@ header{
     height: 80px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.6s ease;
 }
 .nav-img img{
     height: 100%;
@@ -54,7 +58,7 @@ header{
     align-items: center;
 }
 .nav-img img:hover ~ #resultado,#resultado:hover{
-    color: #e2c311;
+    color: #fafafa;
 }
 
 .letra{
@@ -71,11 +75,11 @@ header{
 
 .nav-menu a{
     text-decoration: none;
-    color: #b99a49;
+    color: #FFC107;
     padding: 0 15px;
 }
 .nav-menu a:hover{
-    color: #e2c311;
+    color: #af870e;
     box-shadow: 0px 0px 5px 1px;
     border-radius: 15px;
 }
@@ -95,23 +99,23 @@ header{
 }
 .slide-button{
     position: absolute;
-    z-index: 999;
-    height: 100%;
+    z-index: 998;
+    border-radius: 15px;
     padding: 0 10px;
     transform: translate(-50% -50%);
     font-size: 40px;
-    background-color: transparent;
+    background-color: #1a4139;
     border: none;
-    color: red;
+    color: #F7F7F7;
     cursor: pointer;
     transition: all 0.6s ease;
 }
 #button1{
     left: 10px;
 }
-#button1:hover,#button2:hover{
-    background-color: #b8b7b3;
-    color: #0f221e;
+.slide-button:hover{
+    background-color: #F7F7F7;
+    color: #2F7264;
 }
 #button2{
     right: 10px;
@@ -130,15 +134,14 @@ header{
 section{
     display: block;
 }
-
 .box-back{
-    width: 100%;
-    background-color: #b8b7b3;
+    width: 100%;   
     padding: 10px auto;
+    background: linear-gradient(to top, #cfcfcf,#F7F7F7);
 }
 .box-back h1{
     margin-bottom: 10px;
-    color: black;
+    color: #2F7264;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -148,7 +151,8 @@ section{
     width: 60%;
     padding: 10px 60px;
     margin-bottom: 10px;
-    background-color: #1a4139;
+    margin: 0 20px;
+    background-color: #102924;
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -157,16 +161,90 @@ section{
     display: grid;
     justify-content: center;
     align-items: center;
-    color: #b99a49;
+    color: #FFC107;
 }
 .box-cards article{
-    color: #b8b7b3;
+    color: #fafafa;
 }
-
 .box-cards:hover {
     scale: 1.05;
 }
+.section-box{
+    display: flex;
+    margin: 10px 15px;
+    justify-content: space-around;
+}
 
+.footer {
+  background: linear-gradient(to right, #102924, #204d43);
+  color: #f5f5f5;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 10px 20px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #FFC107;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+#contatos p, #voltar p{
+    font-size: 32px;
+    cursor: pointer;
+}
+#whats:hover{
+  background: linear-gradient(to left, #4FCE5D,#fafafa);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradiente-animado 1s forwards;
+}
+#insta:hover{
+  background: linear-gradient(to left, #bc2a8d, #fccc63, #fbad50);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradiente-animado 1s forwards;
+}
+#face:hover{
+  background: linear-gradient(to left, #3b5998, #fafafa);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradiente-animado 1s forwards;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 14px;
+}
 
 @keyframes letras{
     from {
@@ -176,5 +254,13 @@ section{
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes gradiente-animado {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
