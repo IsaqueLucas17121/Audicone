@@ -10,21 +10,31 @@ letras.forEach((letra,i) => {
 });
 
 let index = 0;
-  const totalSlides = 3;
-  const slideContainer = document.getElementById('slide-allimg');
+const totalSlides = 3;
+const slideContainer = document.getElementById('slide-allimg');
 
-  document.getElementById('button1').addEventListener('click', () => {
-    index--;
-    if (index < 0) {index = totalSlides - 1};
-    updateSlide();
-  });
-
-  document.getElementById('button2').addEventListener('click', () => {
+window.addEventListener('load',function(){
+  
+  setInterval(() =>{
     index++;
     if (index >= totalSlides) {index = 0};
-    updateSlide();  
-  });
+    updateSlide();
+    
+  },8000);
+})
 
-  function updateSlide() {
-    slideContainer.style.transform = `translateX(-${index * 100}%)`;
-  }
+document.getElementById('button1').addEventListener('click', () => {
+  index--;
+  if (index < 0) {index = totalSlides - 1};
+  updateSlide();
+});
+
+document.getElementById('button2').addEventListener('click', () => {
+  index++;
+  if (index >= totalSlides) {index = 0};
+  updateSlide();  
+});
+
+function updateSlide() {
+  slideContainer.style.transform = `translateX(-${index * 100}%)`;
+}
