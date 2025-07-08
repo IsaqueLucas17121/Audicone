@@ -136,7 +136,7 @@ section{
 }
 .box-back{
     width: 100%;   
-    padding: 10px auto;
+    padding-top: 10px;
     background: linear-gradient(to top, #cfcfcf,#F7F7F7);
 }
 .box-back h1{
@@ -145,6 +145,7 @@ section{
     display: grid;
     justify-content: center;
     align-items: center;
+    cursor: default;
 }
 .box-cards{
     margin: 0 auto;
@@ -171,8 +172,132 @@ section{
 }
 .section-box{
     display: flex;
-    margin: 10px 15px;
     justify-content: space-around;
+    padding: 10px;
+}
+
+.box-back2{
+  background: linear-gradient(to top,rgba(201, 201, 201, 0.8), rgb(84, 84, 84)), url(https://www.lopesmachado.com/wp-content/uploads/2023/11/img_artigo0611.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-position: 70% 45%;
+  background-color: #F7F7F7;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow-x: hidden;
+  padding: 30px;
+  cursor: default;
+}
+.box-back2 h2{
+  float: left;
+  margin-right: 20px;
+  color: #F7F7F7;
+  font-size: 2rem;
+}
+.box-back2 h1{
+  color: #FFC107;
+  font-size: 2rem;
+}
+.box-back2 button{
+  padding: 15px;
+  background-color: transparent;
+  box-shadow: 3px 1px 5px 0px #333333;
+  color: #FFC107;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 50px 40px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+#loja{
+  background-color: #1a4139;
+}
+#especial{
+  background-color: #2F7264;
+  color: #F7F7F7;
+}
+#loja:hover,#especial:hover{
+  scale: 1.1;
+}
+
+.back-mapa{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-mapa{
+  padding: 30px;
+  color: #102924;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box-mapa h1{
+  color: #FFC107;
+  font-size: 1.8rem;
+}
+.box-mapa span{
+  color: #FFC107;
+}
+.box-mapa article{
+  color: #102924;
+  font-size: 1.4rem;
+}
+.box-mapa img{
+  width: 400px;
+  height: 400px;
+}
+.box-mapa2{
+  position: relative;
+  margin: 0 15px;
+  font-size: 1rem;
+  background-color: #102924;
+  color: #F7F7F7;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-mapa2 h1{
+  color: #F7F7F7;
+  background-color: #2F7264;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.box-mapa2 article{
+   margin: 10px;
+}
+.box-mapa2 span{
+  color: #FFC107;
+  margin: 10px auto;
+  border-top: 1px solid #F7F7F7;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+.box-mapa2 button{
+  color: #F7F7F7;
+  background-color: #2F7264;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.box-mapa2 button:hover{
+  color: #2F7264;
+  background-color: #F7F7F7;
 }
 
 .footer {
@@ -213,10 +338,11 @@ section{
 .footer-section a:hover {
   text-decoration: underline;
 }
-#contatos p, #voltar p{
+#contatos i,#voltar i{
     font-size: 32px;
     cursor: pointer;
 }
+
 #whats:hover{
   background: linear-gradient(to left, #4FCE5D,#fafafa);
   background-size: 300% 300%;
