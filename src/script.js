@@ -37,4 +37,10 @@ document.getElementById('button2').addEventListener('click', () => {
 
 function updateSlide() {
   slideContainer.style.transform = `translateX(-${index * 100}%)`;
+
+  for(i=0;i<=2;i++){
+    document.getElementById('slide-text' + i).classList.remove('show');
+  }
+  document.getElementById('slide-text' + index).classList.add('show');
+  
 }

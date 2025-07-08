@@ -97,6 +97,32 @@ header{
     position: relative;
     overflow: hidden;
 }
+.slide-text{
+  position: absolute;
+  top: 25%;
+  font-size: 1.7rem;
+}
+.slide-box{
+  opacity: 0;
+  color: #F7F7F7;
+  display: none; /* escondido por padrão */
+}
+.show {
+  animation: slide-text 3.5s forwards;
+  display: block;
+}
+#slide-text0,#slide-text1{
+    width: 70%;
+    background-color: #102924e7;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+#slide-text2{
+  background-color: #102924e7;
+  padding: 10px;
+    border-radius: 15px;
+}
 .slide-button{
     position: absolute;
     z-index: 998;
@@ -208,7 +234,7 @@ section{
   color: #FFC107;
   border-radius: 30px;
   cursor: pointer;
-  margin: 50px 40px;
+  margin: 50px 30px;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
@@ -239,6 +265,10 @@ section{
 .box-mapa h1{
   color: #FFC107;
   font-size: 1.8rem;
+}
+.box-mapa h1 span{
+  color: #102924;
+  text-decoration: underline;
 }
 .box-mapa span{
   color: #FFC107;
@@ -388,5 +418,15 @@ section{
   }
   100% {
     background-position: 100% 50%;
+  }
+}
+@keyframes slide-text {
+  from {
+    opacity: 0;
+    transform: translateX(100px); /* opcional: suave de baixo pra cima */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
