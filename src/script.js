@@ -44,3 +44,4 @@ function updateSlide() {
   document.getElementById('slide-text' + index).classList.add('show');
   
 }
+

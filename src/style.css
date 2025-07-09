@@ -329,6 +329,111 @@ section{
   color: #2F7264;
   background-color: #F7F7F7;
 }
+.back-info{
+  padding: 30px 20px;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+.back-info h1{
+  color: #2F7264;
+}
+.back-info h2{
+  color: #FFC107;
+}
+.box-divisoria{
+  content: '';
+  display: inline-block;
+  width: 1px;
+  background-color: #333333;
+  margin-right: 5px;
+}
+.box-servinfo{
+  display: grid;
+  align-items: stretch;
+  font-size: 1.3rem;
+}
+.box-servinfo2{
+  display: flex;
+  font-size: 1.1rem;
+  width: 40%;
+}
+.back-servicos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.slider-container {
+  width: 90%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+}
+
+.box-servicos {
+  min-width: 300px;
+  max-width: 300px;
+  border: 1px solid #333;
+  padding: 15px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-descriserv{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box-servicos i {
+  color: #FFC107;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.box-servicos h2 {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #FFC107;
+}
+
+.box-servicos article {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.box-servicos span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.slide-buttonserv {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.box-servicos span:hover{
+  color: #2f7264;
+}
 
 .footer {
   background: linear-gradient(to right, #102924, #204d43);
@@ -423,7 +528,7 @@ section{
 @keyframes slide-text {
   from {
     opacity: 0;
-    transform: translateX(100px); /* opcional: suave de baixo pra cima */
+    transform: translateX(100px);
   }
   to {
     opacity: 1;
