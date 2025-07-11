@@ -329,6 +329,24 @@ section{
   color: #2F7264;
   background-color: #F7F7F7;
 }
+.back-diretorio{
+  background-color: #2F7264;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.back-diretorio h2{
+  font-size: 1.5rem;
+  color: #bdbdbd;
+  margin: 0 20px;
+}
+.back-diretorio h2:hover{
+  color: #F7F7F7;
+}
+.back-diretorio i{
+  font-size: 1.5rem;
+  color: #cfcfcf;
+}
 .back-info{
   padding: 30px 20px;
   color: #333333;
@@ -501,7 +519,7 @@ section{
 .back-from{
   padding: 50px;
   margin-top: 10px;
-  background: linear-gradient(to bottom, #cfcfcf,#F7F7F7);;
+  background: linear-gradient(to bottom, #cfcfcf,#F7F7F7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,7 +537,7 @@ section{
   width: 900px;
 }
 .form-text h2{
-  color: #333333;
+  color: #F7F7F7;
   font-size: 1.5rem;
   z-index: 998;
 }
@@ -552,7 +570,7 @@ section{
   color: #FFC107;
   font-size: 1.2rem;
 }
-.form-input input{
+.form-input input, .form-input select{
   padding: 5px;
   background-color: transparent;
   border-radius: 5px;
@@ -561,8 +579,45 @@ section{
   width: 400px;
   font-size: 20px;
 }
+.form-input option{
+  background-color: #F7F7F7;
+  color: #2F7264;
+}
 .form-input input::placeholder{
   color: #F7F7F7;
+}
+.back-sobre{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: #F7F7F7;
+}
+.sobre-img{
+  width: 1000px;
+  margin-right: 80px;
+}
+.sobre-img img{
+  width: 100%;
+}
+.sobre-text{
+  display: grid;
+  align-items: flex-start;
+  align-content: space-evenly;
+  font-size: 1.2rem;
+  cursor: default;
+}
+.sobre-text h1{
+  color: #FFC107;
+  margin-left: 30px;
+}
+.sobre-text span{
+  color: #2F7264;
+  font-weight: 600;
+}
+.sobre-text article{
+  width: 70%;
+  color: #333333;
+  font-weight: 400;
 }
 
 .footer {
