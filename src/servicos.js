@@ -59,9 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
   updateSlide();
 
   // Corrige caso a tela redimensione
-  window.addEventListener('resize', () => {
-    index = Math.min(index, getMaxIndex());
-    updateSlide();
-  });
+ 
 });
 

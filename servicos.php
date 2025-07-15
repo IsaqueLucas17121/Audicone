@@ -1,3 +1,10 @@
+<?php
+  if(isset($_REQUEST['a'])){
+    $a = $_REQUEST['a'];
+  }
+  
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -21,7 +28,46 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <script>
+      <?php if ($a == "acessoria"): ?>
+        setTimeout(function() {
+          document.getElementById("buttonserv2").click();
+        }, 1200);
+      <?php endif; ?>
+    </script>
+    <style>
+      
+      <?php
+        if($a == "empresa"){
+          echo '#empresa{
+          animation: selecionado 3s forwards;
+          animation-delay: 1s;}';
+        }
+        else if($a == "departamento"){
+          echo '#departamento{
+          animation: selecionado 3s forwards;
+          animation-delay: 1s;}';
+        }
+        else if($a == "contabilidade"){
+          echo '#contabilidade{
+          animation: selecionado 3s forwards;
+          animation-delay: 1s;}';
+        }
+        else if($a == "acessoria"){
+          echo '#acessoria{
+          animation: selecionado 3s forwards;
+          animation-delay: 2s;}';
+        }
+        else if($a == "legalizacao"){
+          echo '#legalizacao{
+          animation: selecionado 3s forwards;
+          animation-delay: 1s;}';
+        }
+        else{
+          ;
+        }
+      ?>
+    </style>
 </head>
 <body>
     <header>
@@ -36,9 +82,9 @@
         </div>
         <div class="nav-menu">
             <ul>
-                <a href="index.html"><li>Início</li></a>
-                <a href="servicos.html"><li>Serviços</li></a>
-                <a href="sobre.html"><li>Sobre</li></a>
+                <a href="index.php"><li>Início</li></a>
+                <a href="servicos.php"><li>Serviços</li></a>
+                <a href="sobre.php"><li>Sobre</li></a>
                 <a href=""><li>Contato</li></a>
             </ul>
         </div>
@@ -46,9 +92,9 @@
     </header>
     <section>
       <div class="back-diretorio">
-        <a href="index.html"><h2>Início</h2></a>
+        <a href="index.php"><h2>Início</h2></a>
         <i class="bi bi-caret-right"></i>
-        <a href="servicos.html"><h2>Serviços</h2></a>
+        <a href="servicos.php"><h2>Serviços</h2></a>
       </div>
     </section>
 
@@ -77,7 +123,7 @@
     <div class="slider-container" id="sliderContainer">
       <div class="slider-track" id="sliderTrack">
         <!-- Box 1 -->
-        <div class="box-servicos">
+        <div class="box-servicos" id="empresa">
           <div class="box-descriserv">
             <i class="bi bi-building-add"></i>
             <h2>Abertura de Empresa</h2>
@@ -91,10 +137,10 @@
         </div>
 
         <!-- Box 2 -->
-        <div class="box-servicos">
+        <div class="box-servicos" id="departamento">
           <div class="box-descriserv">
             <i class="bi bi-bar-chart-line"></i>
-            <h2>Consultoria Fiscal</h2>
+            <h2>Departamento Pessoal</h2>
           </div> 
           <article>
             Tenha apoio estratégico e evite erros fiscais. Nossa equipe acompanha de perto suas obrigações tributárias.
@@ -103,7 +149,7 @@
         </div>
 
         <!-- Box 3 -->
-        <div class="box-servicos">
+        <div class="box-servicos" id="contabilidade">
           <div class="box-descriserv">
             <i class="bi bi-graph-up"></i>
             <h2>Contabilidade Geral</h2>
@@ -114,7 +160,7 @@
           <span>Solicite um Orçamento</span>
         </div>
         <!-- Box 4 -->
-        <div class="box-servicos">
+        <div class="box-servicos" id="legalizacao">
           <div class="box-descriserv">
             <i class="bi bi-check-lg"></i>
             <h2>Legalização Societária</h2>
@@ -127,7 +173,7 @@
           <span>Solicite um Orçamento</span>
         </div>
         <!-- Box 5 -->
-        <div class="box-servicos">
+        <div class="box-servicos" id="acessoria">
           <div class="box-descriserv">
             <i class="bi bi-clipboard2-data"></i>
             <h2>Acessoria Tributária</h2>
@@ -187,17 +233,17 @@
     <div class="footer-section">
       <h4>Serviços</h4>
       <ul>
-        <li><a href="#">Contabilidade Geral</a></li>
-        <li><a href="#">Legalização Societária</a></li>
-        <li><a href="#">Abertura de Empresa</a></li>
-        <li><a href="#">Departamento Pessoal</a></li>
-        <li><a href="#">Acessoria Tributária</a></li>
+        <li><a href="<?php echo 'servicos.php?a=contabilidade'?>">Contabilidade Geral</a></li>
+        <li><a href="<?php echo 'servicos.php?a=legalizacao'?>">Legalização Societária</a></li>
+        <li><a href="<?php echo 'servicos.php?a=empresa'?>">Abertura de Empresa</a></li>
+        <li><a href="<?php echo 'servicos.php?a=departamento'?>">Departamento Pessoal</a></li>
+        <li><a href="<?php echo 'servicos.php?a=acessoria'?>">Acessoria Tributária</a></li>
       </ul>
     </div>
 
     <div class="footer-section" id="contatos">
       <h4>Contato</h4>
-      <p><i class="bi bi-whatsapp" id="whats"></i></p>
+      <p><a href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
       <p><i class="bi bi-instagram" id="insta"></i></p>
       <p><i class="bi bi-facebook" id="face"></i></p>
     </div>

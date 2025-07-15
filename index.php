@@ -37,9 +37,9 @@
         </div>
         <div class="nav-menu">
             <ul>
-                <a href="index.html"><li>Início</li></a>
-                <a href="servicos.html"><li>Serviços</li></a>
-                <a href="sobre.html"><li>Sobre</li></a>
+                <a href="index.php"><li>Início</li></a>
+                <a href="servicos.php"><li>Serviços</li></a>
+                <a href="sobre.php"><li>Sobre</li></a>
                 <a href=""><li>Contato</li></a>
             </ul>
         </div>
@@ -117,7 +117,7 @@
         <div class="box-back2">
             <h2>Ja decidiu?</h2><h1>Podemos começar?</h1>
             <button id="loja">Abrir empresa</button>
-            <button id="especial">Fale com um especialista</button>
+            <button onclick="location.href='https://api.whatsapp.com/send?phone=5521983832152'" id="especial">Fale com um especialista</button>
         </div>   
     </section>
     <section>
@@ -130,8 +130,8 @@
             <div class="box-mapa2">
                 <h1>Você não precisa sair de casa</h1>
                 <article>Nos da Audicone cuidamos de tudo, basta ligar e descrever seu problema que fazemos o resto</article>
-                <span>Atendimento de 0:00 até 0:00</span>
-                <button>Ligue Agora</button>
+                <span>Atendimento de Segunda a Sexta (8:00 até 17:00)</span>
+                <button onclick="location.href='https://api.whatsapp.com/send?phone=5521983832152'">Ligue Agora</button>
             </div>
         </div>
         
@@ -146,19 +146,19 @@
     <div class="footer-section">
       <h4>Serviços</h4>
       <ul>
-        <li><a href="#">Contabilidade Geral</a></li>
-        <li><a href="#">Legalização Societária</a></li>
-        <li><a href="#">Abertura de Empresa</a></li>
-        <li><a href="#">Departamento Pessoal</a></li>
-        <li><a href="#">Acessoria Tributária</a></li>
+        <li><a href="<?php echo 'servicos.php?a=contabilidade'?>">Contabilidade Geral</a></li>
+        <li><a href="<?php echo 'servicos.php?a=legalizacao'?>">Legalização Societária</a></li>
+        <li><a href="<?php echo 'servicos.php?a=empresa'?>">Abertura de Empresa</a></li>
+        <li><a href="<?php echo 'servicos.php?a=departamento'?>">Departamento Pessoal</a></li>
+        <li><a href="<?php echo 'servicos.php?a=acessoria'?>">Acessoria Tributária</a></li>
       </ul>
     </div>
 
     <div class="footer-section" id="contatos">
       <h4>Contato</h4>
-      <p><i class="bi bi-whatsapp" id="whats"></i></p>
-      <p><i class="bi bi-instagram" id="insta"></i></p>
-      <p><i class="bi bi-facebook" id="face"></i></p>
+      <p><a href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
+      <p><a href=""><i class="bi bi-instagram" id="insta"></i></a></p>
+      <p><a href=""><i class="bi bi-facebook" id="face"></i></a></p>
     </div>
     <div class="footer-section" id="voltar">      
         <h4>Voltar ao Topo</h4>

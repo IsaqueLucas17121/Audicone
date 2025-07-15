@@ -146,6 +146,9 @@ header{
 #button2{
     right: 10px;
 }
+#sliderTrack{
+  transform: translateX(-350px);
+}
 
 .slide-img{
     display: flex;
@@ -172,6 +175,7 @@ section{
     justify-content: center;
     align-items: center;
     cursor: default;
+    font-weight: 600px;
 }
 .box-cards{
     margin: 0 auto;
@@ -181,7 +185,7 @@ section{
     margin: 0 20px;
     background-color: #102924;
     border-radius: 15px;
-    cursor: pointer;
+    cursor: default;
     transition: all 0.5s ease;
 }
 .box-cards h2{
@@ -216,6 +220,7 @@ section{
   overflow-x: hidden;
   padding: 30px;
   cursor: default;
+  background-attachment: fixed;
 }
 .box-back2 h2{
   float: left;
@@ -413,7 +418,7 @@ section{
   width: 285px;
 }
 
-.box-servicos:hover {
+.box-servicos:hover,.back-missao:hover,.back-visao:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
@@ -587,37 +592,104 @@ section{
   color: #F7F7F7;
 }
 .back-sobre{
+  position: relative;
   display: flex;
   justify-content: space-around;
   padding: 50px;
   background-color: #F7F7F7;
+  background-image: url('../img/ImagemSobre.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
 }
-.sobre-img{
-  width: 1000px;
-  margin-right: 80px;
-}
-.sobre-img img{
+.fill-sobre{
+  position: absolute;
+  background-color: #1a4139;
   width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  display: grid;
 }
 .sobre-text{
+  padding: 10px;
   display: grid;
   align-items: flex-start;
   align-content: space-evenly;
   font-size: 1.2rem;
   cursor: default;
+  justify-items: center;
 }
 .sobre-text h1{
   color: #FFC107;
-  margin-left: 30px;
+  font-size: 30px;
 }
 .sobre-text span{
-  color: #2F7264;
-  font-weight: 600;
+  color: #F7F7F7;
+  font-weight: 800;
+  font-size: 23px;
 }
 .sobre-text article{
   width: 70%;
-  color: #333333;
+  color: #fafafa;
   font-weight: 400;
+  font-size: 17px;
+}
+.back-sobre2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F7F7F7;
+  padding: 60px 20px;
+}
+.back-visao,.back-missao{
+  display: grid;
+  justify-items: center;
+  padding: 10px 5px;
+  background-color: #cfcfcf;
+  margin: 0 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  border-radius: 12px;
+}
+.back-visao h1,.back-missao h1{
+  color: #d7a307;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.back-visao article,.back-missao article{
+  color: #333333;
+  width: 85%;
+  font-size: 17px;
+}
+.back-sobre3{
+  background: linear-gradient(to bottom, #cfcfcf,#F7F7F7);
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  padding: 50px 20px;
+}
+.back-sobre3 h1{
+  color: #2F7264;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+.back-sobre3 article{
+  color: #333333;
+  font-size: 20px;
+  width: 90%;
+  text-align: center;
+  margin: 0 0 40px;
+}
+.back-sobre3 span{
+  font-size: 22px;
+  color: #102924;
+  font-weight: 600;
 }
 
 .footer {
@@ -718,6 +790,33 @@ section{
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes selecionado {
+  0%{
+    transform: translateY(0px);
+    background-color: #fff;
+    color: #102924 !important;
+  }
+  20%{
+    transform: translateY(-20px);
+    background-color: #102924;
+    color: #fff !important;  
+  }
+  40%{
+    transform: translateY(0px);
+    background-color: #fff;
+    color: #102924 !important;
+  }
+  80%{
+    transform: translateY(-20px);
+    background-color: #102924;
+    color: #fff !important;
+  }
+  100%{
+    transform: translateY(0px);
+    background-color: #fff;
+    color: #102924 !important;
   }
 }
 
