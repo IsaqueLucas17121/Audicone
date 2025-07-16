@@ -116,8 +116,8 @@
     <section>
         <div class="box-back2">
             <h2>Ja decidiu?</h2><h1>Podemos começar?</h1>
-            <button id="loja">Abrir empresa</button>
-            <button onclick="location.href='https://api.whatsapp.com/send?phone=5521983832152'" id="especial">Fale com um especialista</button>
+            <button onclick="enviarWhatsApp('Olá, gostaria de abrir uma nova empresa!')" id="loja">Abrir empresa</button>
+            <a href="https://api.whatsapp.com/send?phone=5521983832152" target="_blank"><button id="especial">Fale com um especialista</button></a>
         </div>   
     </section>
     <section>
@@ -131,7 +131,7 @@
                 <h1>Você não precisa sair de casa</h1>
                 <article>Nos da Audicone cuidamos de tudo, basta ligar e descrever seu problema que fazemos o resto</article>
                 <span>Atendimento de Segunda a Sexta (8:00 até 17:00)</span>
-                <button onclick="location.href='https://api.whatsapp.com/send?phone=5521983832152'">Ligue Agora</button>
+                <a href="https://api.whatsapp.com/send?phone=5521983832152" target="_blank"><button>Ligue Agora</button></a>
             </div>
         </div>
         
@@ -156,9 +156,9 @@
 
     <div class="footer-section" id="contatos">
       <h4>Contato</h4>
-      <p><a href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
-      <p><a href=""><i class="bi bi-instagram" id="insta"></i></a></p>
-      <p><a href=""><i class="bi bi-facebook" id="face"></i></a></p>
+      <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
+      <p><a target="_blank" href="https://www.instagram.com/audi.cone_?utm_source=qr&igsh=YXUyanBibDZhNzBw"><i class="bi bi-instagram" id="insta"></i></a></p>
+      <p style="display:none;"><a href=""><i class="bi bi-facebook" id="face"></i></a></p>
     </div>
     <div class="footer-section" id="voltar">      
         <h4>Voltar ao Topo</h4>
@@ -172,7 +172,7 @@
 </footer>
 
 
-          <!-- VLibras Widget -->
+    <!-- VLibras Widget -->
   <div vw class="enabled">
       <div vw-access-button class="active"></div>
       <div vw-plugin-wrapper>
@@ -184,6 +184,6 @@
       new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
   <!-- Fim VLibras Widget -->
-
+    
 </body>
 </html>

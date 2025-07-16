@@ -133,7 +133,7 @@
             Cuidamos de toda a parte burocrática: CNPJ, alvarás, enquadramento tributário e muito mais.
             Fale com um contador agora e dê o primeiro passo rumo ao sucesso.
           </article>
-          <span>Solicite um Orçamento</span>
+          <span onclick="enviarWhatsApp('Olá, gostaria de abrir uma nova empresa!')" >Solicite um Orçamento</span>
         </div>
 
         <!-- Box 2 -->
@@ -145,7 +145,7 @@
           <article>
             Tenha apoio estratégico e evite erros fiscais. Nossa equipe acompanha de perto suas obrigações tributárias.
           </article>
-          <span>Solicite um Orçamento</span>
+          <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para departamento pessoal!')">Solicite um Orçamento</span>
         </div>
 
         <!-- Box 3 -->
@@ -157,7 +157,7 @@
           <article>
             Controle total do seu negócio com relatórios precisos e suporte constante. Ideal para empresas que querem crescer com segurança.
           </article>
-          <span>Solicite um Orçamento</span>
+          <span onclick="enviarWhatsApp('Olá, gostaria de fazer um orçamento geral!')" >Solicite um Orçamento</span>
         </div>
         <!-- Box 4 -->
         <div class="box-servicos" id="legalizacao">
@@ -170,7 +170,7 @@
             Inclui contratos sociais, registros na Junta Comercial, CNPJ, alvarás e muito mais.
             Evite problemas futuros e comece do jeito certo.
           </article>
-          <span>Solicite um Orçamento</span>
+          <span onclick="enviarWhatsApp('Olá, gostaria de solicitar uma legalização societária!')">Solicite um Orçamento</span>
         </div>
         <!-- Box 5 -->
         <div class="box-servicos" id="acessoria">
@@ -182,7 +182,7 @@
             Com a assessoria tributária certa, sua empresa economiza nos impostos e evita multas e riscos fiscais.
             Analisamos seu regime tributário, orientamos sobre obrigações legais e garantimos o cumprimento das normas.
           </article>
-          <span>Solicite um Orçamento</span>
+          <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para acessoria tributária!')">Solicite um Orçamento</span>
         </div>
       </div>
     </div>
@@ -203,20 +203,23 @@
       </article>
     </div>
     <div class="form-input">
-      <label for="nome">Digite seu nome</label>
-      <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-      <label for="funcao">Selecione sua função</label>
-      <select name="funcao" id="funcao">
-        <option value=""></option>
-        <option value=""></option>
-        <option value=""></option>
-        <option value=""></option>
-        <option value=""></option>
-      </select>
-      <label for="email">Digite seu Email</label>
-      <input type="email" placeholder="exemplo@gmail.com">
-      <label for="telefone">Digite seu Telefone</label>
-      <input type="text" placeholder="(21)12345-6789">
+      <form id="formWhatsApp">
+        <label for="nome">Digite seu nome</label>
+        <input type="text" minlength="3" maxlength="15" name="nome" id="nome" placeholder="Digite seu nome" required>
+        <label for="funcao">Selecione seu segmento</label>
+        <select name="funcao" name="funcao" id="funcao" required>
+          <option value="Contabilidade Completa">Contabilidade Completa</option>
+          <option value="Legalização">Legalização</option>
+          <option value="Abertura de Empresa">Abertura de Empresa</option>
+          <option value="Gestão Fiscal e Tributária">Gestão Fiscal e Tributária</option>
+          <option value="Departamento Pessoal">Departamento Pessoal</option>
+        </select>
+        <label for="email">Digite seu Email</label>
+        <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
+        <label for="telefone">Digite seu Telefone</label>
+        <input type="text" name="telefone" id="telefone" maxlength="15" placeholder="(21)12345-6789" required>
+        <input id="buttonSubmit" type="submit" value="Enviar Email">
+      </form>
     </div>
   </div>
 </section>
@@ -243,9 +246,9 @@
 
     <div class="footer-section" id="contatos">
       <h4>Contato</h4>
-      <p><a href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
-      <p><i class="bi bi-instagram" id="insta"></i></p>
-      <p><i class="bi bi-facebook" id="face"></i></p>
+      <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
+      <p> <a target="_blank" href="https://www.instagram.com/audi.cone_?utm_source=qr&igsh=YXUyanBibDZhNzBw"><i class="bi bi-instagram" id="insta"></i></a></p>
+      <p style="display:none;"><i class="bi bi-facebook" id="face"></i></p>
     </div>
     <div class="footer-section" id="voltar">      
         <h4>Voltar ao Topo</h4>

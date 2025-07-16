@@ -122,9 +122,9 @@
 
       <div class="footer-section" id="contatos">
         <h4>Contato</h4>
-        <p><a href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
-        <p><i class="bi bi-instagram" id="insta"></i></p>
-        <p><i class="bi bi-facebook" id="face"></i></p>
+        <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
+        <p><a target="_blank" href="https://www.instagram.com/audi.cone_?utm_source=qr&igsh=YXUyanBibDZhNzBw"><i class="bi bi-instagram" id="insta"></i></a></p>
+        <p style="display:none;"><i class="bi bi-facebook" id="face"></i></p>
       </div>
       <div class="footer-section" id="voltar">      
           <h4>Voltar ao Topo</h4>

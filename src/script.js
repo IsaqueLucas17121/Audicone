@@ -45,3 +45,40 @@ function updateSlide() {
   
 }
 
+function enviarWhatsApp(texto) {
+  const numero = '5521983832152'; // DDD + número (sem espaços ou traços)
+  const mensagem = texto;
+  const textoCodificado = encodeURIComponent(mensagem);
+  const link = `https://wa.me/${numero}?text=${textoCodificado}`;
+
+  window.open(link, '_blank'); // abre em nova aba
+}
+
+const telefoneInput = document.getElementById('telefone');
+
+telefoneInput.addEventListener('input', function () {
+  let valor = telefoneInput.value.replace(/\D/g, '');
+
+  if (valor.length > 11) {
+    valor = valor.slice(0, 11);
+  }
+
+  if (valor.length > 6) {
+    telefoneInput.value = `(${valor.slice(0, 2)}) ${valor.slice(2, 7)}-${valor.slice(7)}`;
+  } else if (valor.length > 2) {
+    telefoneInput.value = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
+  } else {
+    telefoneInput.value = `(${valor}`;
+  }
+});
+
+const formulario = document.getElementById('formWhatsApp');
+
+formulario.addEventListener('submit',function(event){
+  event.preventDefault(); // previne erros
+
+  const email = document.getElementById('email');
+  const telefone = document.getElementById('telefone');
+  const nome = document.getElementById('nome');
+  const funcao = document.getElementById('funcao');
+})

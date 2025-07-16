@@ -567,9 +567,16 @@ section{
   background-color: #102924;
   border-radius: 15px;
   padding: 20px 10px;
-  height: 300px;
   position: absolute;
   left: 55%;
+}
+#buttonSubmit{
+  background-color: #2F7264;
+  color: #FFC107;
+  margin-top: 10px;
+}
+.form-input form{
+  display: grid;
 }
 .form-input label{
   color: #FFC107;
@@ -583,6 +590,7 @@ section{
   border: 1px solid #F7F7F7;
   width: 400px;
   font-size: 20px;
+  margin: 5px 0px 0px;
 }
 .form-input option{
   background-color: #F7F7F7;

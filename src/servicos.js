@@ -62,3 +62,12 @@ document.addEventListener('DOMContentLoaded', function() {
  
 });
 
+
+function enviarWhatsApp(texto) {
+  const numero = '5521983832152'; // DDD + número (sem espaços ou traços)
+  const mensagem = texto;
+  const textoCodificado = encodeURIComponent(mensagem);
+  const link = `https://wa.me/${numero}?text=${textoCodificado}`;
+
+  window.open(link, '_blank'); // abre em nova aba
+}
