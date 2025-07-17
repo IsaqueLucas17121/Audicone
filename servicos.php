@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="src/style.css">
 
     <!-- Icone da Barra -->
-    <link rel="shortcut icon" href="img/ImagemSite.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/ImagemSite.png" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,51 +28,55 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
     <script>
-      <?php if ($a == "acessoria"): ?>
-        setTimeout(function() {
+      <?php if(isset($_REQUEST['a'])){ if ($a == "acessoria"){
+        echo 'setTimeout(function() {
           document.getElementById("buttonserv2").click();
-        }, 1200);
-      <?php endif; ?>
+        }, 1200);';
+      }else{}} ?>
     </script>
     <style>
       
       <?php
-        if($a == "empresa"){
-          echo '#empresa{
-          animation: selecionado 3s forwards;
-          animation-delay: 1s;}';
-        }
-        else if($a == "departamento"){
-          echo '#departamento{
-          animation: selecionado 3s forwards;
-          animation-delay: 1s;}';
-        }
-        else if($a == "contabilidade"){
-          echo '#contabilidade{
-          animation: selecionado 3s forwards;
-          animation-delay: 1s;}';
-        }
-        else if($a == "acessoria"){
-          echo '#acessoria{
-          animation: selecionado 3s forwards;
-          animation-delay: 2s;}';
-        }
-        else if($a == "legalizacao"){
-          echo '#legalizacao{
-          animation: selecionado 3s forwards;
-          animation-delay: 1s;}';
-        }
-        else{
-          ;
-        }
+      if(isset($_REQUEST['a'])){
+
+          if($a == "empresa"){
+            echo '#empresa{
+            animation: selecionado 3s forwards;
+            animation-delay: 1s;}';
+          }
+          else if($a == "departamento"){
+            echo '#departamento{
+            animation: selecionado 3s forwards;
+            animation-delay: 1s;}';
+          }
+          else if($a == "contabilidade"){
+            echo '#contabilidade{
+            animation: selecionado 3s forwards;
+            animation-delay: 1s;}';
+          }
+          else if($a == "acessoria"){
+            echo '#acessoria{
+            animation: selecionado 3s forwards;
+            animation-delay: 2s;}';
+          }
+          else if($a == "legalizacao"){
+            echo '#legalizacao{
+            animation: selecionado 3s forwards;
+            animation-delay: 1s;}';
+          }
+          else{
+            ;
+          }
+      }
       ?>
     </style>
 </head>
 <body>
     <header>
         <div class="nav-img">
-            <img src="img/ImagemSite.jpeg" alt="Imagem da Audicone Contadores">
+            <img src="img/ImagemSite.png" alt="Imagem da Audicone Contadores">
             
             <div id="resultado"></div>
             
@@ -85,7 +89,7 @@
                 <a href="index.php"><li>Início</li></a>
                 <a href="servicos.php"><li>Serviços</li></a>
                 <a href="sobre.php"><li>Sobre</li></a>
-                <a href=""><li>Contato</li></a>
+                <a href="contato.php"><li>Contato</li></a>
             </ul>
         </div>
 
@@ -217,14 +221,12 @@
         <label for="email">Digite seu Email</label>
         <input type="email" name="email" id="email" placeholder="exemplo@gmail.com" required>
         <label for="telefone">Digite seu Telefone</label>
-        <input type="text" name="telefone" id="telefone" maxlength="15" placeholder="(21)12345-6789" required>
+        <input oninput="formatarCelular(this)" type="text" name="telefone" id="telefone" maxlength="15" placeholder="(21)12345-6789" required>
         <input id="buttonSubmit" type="submit" value="Enviar Email">
       </form>
     </div>
   </div>
 </section>
-
-
 
     <footer class="footer">
   <div class="footer-container">
@@ -275,6 +277,41 @@
   </script>
   <!-- Fim VLibras Widget -->
     
+  <script>  
+    function mascaraCelular(valor) {
+        valor = valor.replace(/\D/g, '');
+        valor = valor.replace(/^(\d{2})(\d)/g, '($1) $2');
+        valor = valor.replace(/(\d{5})(\d)/, '$1-$2');
+        return valor;
+    }
+
+    function formatarCelular(input) {
+        input.value = mascaraCelular(input.value);
+    }
+
+    const formulario = document.getElementById('formWhatsApp');
+
+    formulario.addEventListener('submit', function(event) {
+    
+    event.preventDefault(); // Previne o envio padrão
+
+    const emailEnviar = 'martinho.audicone@terra.com.br';
+
+    // Pega os valores dos inputs
+    const nome = encodeURIComponent(document.getElementById('nome').value);
+    const funcao = encodeURIComponent(document.getElementById('funcao').value);
+    const email = encodeURIComponent(document.getElementById('email').value);
+    const telefone = encodeURIComponent(document.getElementById('telefone').value);
+
+    // Monta o link de e-mail
+    const assunto = `Informações sobre serviços – ${nome}`;
+    const corpo = `Meu e-mail: ${email}%0AMeu telefone: ${telefone}%0AGostaria de mais informações sobre ${funcao}.`;
+
+    const link = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailEnviar}&su=${assunto}&body=${corpo}`;
+    window.open(link, "_blank");
+
+  });
+  </script>
 </body>
 </html>
 

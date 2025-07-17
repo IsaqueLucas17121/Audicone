@@ -574,6 +574,7 @@ section{
   background-color: #2F7264;
   color: #FFC107;
   margin-top: 10px;
+  cursor: pointer;
 }
 .form-input form{
   display: grid;
@@ -698,6 +699,14 @@ section{
   font-size: 22px;
   color: #102924;
   font-weight: 600;
+}
+.back-pdf{
+  width: 100%;
+  height: 150vw;
+}
+.back-pdf img{
+  width:100%; 
+  height:100%;
 }
 
 .footer {

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="src/style.css">
 
     <!-- Icone da Barra -->
-    <link rel="shortcut icon" href="img/ImagemSite.jpeg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/ImagemSite.png" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
 
     <header>
         <div class="nav-img">
-            <img src="img/ImagemSite.jpeg" alt="Imagem da Audicone Contadores">
+            <img src="img/ImagemSite.png" alt="Imagem da Audicone Contadores">
             
             <div id="resultado"></div>
             
@@ -40,7 +40,7 @@
                 <a href="index.php"><li>Início</li></a>
                 <a href="servicos.php"><li>Serviços</li></a>
                 <a href="sobre.php"><li>Sobre</li></a>
-                <a href=""><li>Contato</li></a>
+                <a href="contato.php"><li>Contato</li></a>
             </ul>
         </div>
 
