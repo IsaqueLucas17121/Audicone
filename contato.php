@@ -45,6 +45,14 @@
     </header>
 
     <section>
+      <div class="back-diretorio">
+        <a href="index.php"><h2>Início</h2></a>
+        <i class="bi bi-caret-right"></i>
+        <a href="contato.php"><h2>Contato</h2></a>
+      </div>
+    </section>
+
+    <section>
         <div class='back-pdf'>
             <img src="img\Cartão Digital - Audiocne Contadores.pdf.png" alt="imagem Cartão Audicone">
         </div>
