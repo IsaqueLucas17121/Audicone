@@ -59,8 +59,7 @@ letras.forEach((letra,i) => {
 });
 
 
-// Aguarda o DOM carregar completamente
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const track = document.getElementById('sliderTrack');
   const boxes = document.querySelectorAll('.box-servicos');
   const buttonLeft = document.getElementById('buttonsrev1');
@@ -71,13 +70,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function getVisibleBoxes() {
     const containerWidth = container.offsetWidth;
-    const boxWidth = 320; // 300px + 20px gap
+    const boxWidth = 320; // estimativa (300px + 20px gap)
     return Math.floor(containerWidth / boxWidth);
   }
 
   function getMaxIndex() {
     const visibleBoxes = getVisibleBoxes();
-    return Math.max(0, boxes.length - visibleBoxes - 1);
+    return Math.max(0, boxes.length - visibleBoxes);
+  }
+
+  function updateSlide() {
+    const bodyWidth = document.body.clientWidth;
+    const boxWidth = boxes[0].offsetWidth + 20; // se o gap for 20px
+
+    track.style.transform = `translateX(-${index * boxWidth}px)`;
+
+    // Atualiza estado dos botões
+    buttonLeft.style.opacity = index === 0 ? '0.5' : '1';
+    buttonRight.style.opacity = index >= getMaxIndex() ? '0.5' : '1';
   }
 
   buttonRight.addEventListener('click', () => {
@@ -95,20 +105,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  function updateSlide() {
-    const boxWidth = 305; // 300px + 20px gap
-    track.style.transform = `translateX(-${index * boxWidth}px)`;
-    
-    // Atualiza estado dos botões
-    buttonLeft.style.opacity = index === 0 ? '0.5' : '1';
-    buttonRight.style.opacity = index >= getMaxIndex() ? '0.5' : '1';
-  }
+  // Atualiza o slider ao redimensionar a janela
+  window.addEventListener('resize', () => {
+    updateSlide();
+  });
 
-  // Inicializa o slider
   updateSlide();
-
-  // Corrige caso a tela redimensione
- 
 });
 
 

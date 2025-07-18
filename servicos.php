@@ -121,82 +121,84 @@
         </div>
     </section>
 
-    <section>
-  <div class="back-servicos">
-    <button class="slide-buttonserv" id="buttonsrev1">
-      <i class="bi bi-arrow-left"></i>
-    </button>
+<section>
+  <div class="padding-servicos">
+    <div class="back-servicos">
+      <button class="slide-buttonserv" id="buttonsrev1">
+        <i class="bi bi-arrow-left"></i>
+      </button>
 
-    <div class="slider-container" id="sliderContainer">
-      <div class="slider-track" id="sliderTrack">
-        <!-- Box 1 -->
-        <div class="box-servicos" id="empresa">
-          <div class="box-descriserv">
-            <i class="bi bi-building-add"></i>
-            <h2>Abertura de Empresa</h2>
+      <div class="slider-container" id="sliderContainer">
+        <div class="slider-track" id="sliderTrack">
+          <!-- Box 1 -->
+          <div class="box-servicos" id="empresa">
+            <div class="box-descriserv">
+              <i class="bi bi-building-add"></i>
+              <h2>Abertura de Empresa</h2>
+            </div>
+            <article>
+              Transforme sua ideia em realidade com quem entende do assunto.
+              Cuidamos de toda a parte burocrática: CNPJ, alvarás, enquadramento tributário e muito mais.
+              Fale com um contador agora e dê o primeiro passo rumo ao sucesso.
+            </article>
+            <span onclick="enviarWhatsApp('Olá, gostaria de abrir uma nova empresa!')" >Solicite um Orçamento</span>
           </div>
-          <article>
-            Transforme sua ideia em realidade com quem entende do assunto.
-            Cuidamos de toda a parte burocrática: CNPJ, alvarás, enquadramento tributário e muito mais.
-            Fale com um contador agora e dê o primeiro passo rumo ao sucesso.
-          </article>
-          <span onclick="enviarWhatsApp('Olá, gostaria de abrir uma nova empresa!')" >Solicite um Orçamento</span>
-        </div>
 
-        <!-- Box 2 -->
-        <div class="box-servicos" id="departamento">
-          <div class="box-descriserv">
-            <i class="bi bi-bar-chart-line"></i>
-            <h2>Departamento Pessoal</h2>
-          </div> 
-          <article>
-            Tenha apoio estratégico e evite erros fiscais. Nossa equipe acompanha de perto suas obrigações tributárias.
-          </article>
-          <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para departamento pessoal!')">Solicite um Orçamento</span>
-        </div>
+          <!-- Box 2 -->
+          <div class="box-servicos" id="departamento">
+            <div class="box-descriserv">
+              <i class="bi bi-bar-chart-line"></i>
+              <h2>Departamento Pessoal</h2>
+            </div> 
+            <article>
+              Tenha apoio estratégico e evite erros fiscais. Nossa equipe acompanha de perto suas obrigações tributárias.
+            </article>
+            <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para departamento pessoal!')">Solicite um Orçamento</span>
+          </div>
 
-        <!-- Box 3 -->
-        <div class="box-servicos" id="contabilidade">
-          <div class="box-descriserv">
-            <i class="bi bi-graph-up"></i>
-            <h2>Contabilidade Geral</h2>
-          </div> 
-          <article>
-            Controle total do seu negócio com relatórios precisos e suporte constante. Ideal para empresas que querem crescer com segurança.
-          </article>
-          <span onclick="enviarWhatsApp('Olá, gostaria de fazer um orçamento geral!')" >Solicite um Orçamento</span>
-        </div>
-        <!-- Box 4 -->
-        <div class="box-servicos" id="legalizacao">
-          <div class="box-descriserv">
-            <i class="bi bi-check-lg"></i>
-            <h2>Legalização Societária</h2>
-          </div> 
-          <article>
-            A legalização societária garante que sua empresa esteja em conformidade com as leis desde o início.
-            Inclui contratos sociais, registros na Junta Comercial, CNPJ, alvarás e muito mais.
-            Evite problemas futuros e comece do jeito certo.
-          </article>
-          <span onclick="enviarWhatsApp('Olá, gostaria de solicitar uma legalização societária!')">Solicite um Orçamento</span>
-        </div>
-        <!-- Box 5 -->
-        <div class="box-servicos" id="acessoria">
-          <div class="box-descriserv">
-            <i class="bi bi-clipboard2-data"></i>
-            <h2>Acessoria Tributária</h2>
-          </div> 
-          <article>
-            Com a assessoria tributária certa, sua empresa economiza nos impostos e evita multas e riscos fiscais.
-            Analisamos seu regime tributário, orientamos sobre obrigações legais e garantimos o cumprimento das normas.
-          </article>
-          <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para acessoria tributária!')">Solicite um Orçamento</span>
+          <!-- Box 3 -->
+          <div class="box-servicos" id="contabilidade">
+            <div class="box-descriserv">
+              <i class="bi bi-graph-up"></i>
+              <h2>Contabilidade Geral</h2>
+            </div> 
+            <article>
+              Controle total do seu negócio com relatórios precisos e suporte constante. Ideal para empresas que querem crescer com segurança.
+            </article>
+            <span onclick="enviarWhatsApp('Olá, gostaria de fazer um orçamento geral!')" >Solicite um Orçamento</span>
+          </div>
+          <!-- Box 4 -->
+          <div class="box-servicos" id="legalizacao">
+            <div class="box-descriserv">
+              <i class="bi bi-check-lg"></i>
+              <h2>Legalização Societária</h2>
+            </div> 
+            <article>
+              A legalização societária garante que sua empresa esteja em conformidade com as leis desde o início.
+              Inclui contratos sociais, registros na Junta Comercial, CNPJ, alvarás e muito mais.
+              Evite problemas futuros e comece do jeito certo.
+            </article>
+            <span onclick="enviarWhatsApp('Olá, gostaria de solicitar uma legalização societária!')">Solicite um Orçamento</span>
+          </div>
+          <!-- Box 5 -->
+          <div class="box-servicos" id="acessoria">
+            <div class="box-descriserv">
+              <i class="bi bi-clipboard2-data"></i>
+              <h2>Acessoria Tributária</h2>
+            </div> 
+            <article>
+              Com a assessoria tributária certa, sua empresa economiza nos impostos e evita multas e riscos fiscais.
+              Analisamos seu regime tributário, orientamos sobre obrigações legais e garantimos o cumprimento das normas.
+            </article>
+            <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para acessoria tributária!')">Solicite um Orçamento</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <button  class="slide-buttonserv" id="buttonserv2">
-      <i class="bi bi-arrow-right"></i>
-    </button>
+      <button  class="slide-buttonserv" id="buttonserv2">
+        <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
   </div>
 </section>
 
