@@ -75,21 +75,24 @@
 </head>
 <body>
     <header>
-        <div class="nav-img">
+        <a class="nav-img" href="index.php"><div class="nav-img">
             <img src="img/ImagemSite.png" alt="Imagem da Audicone Contadores">
             
             <div id="resultado"></div>
             
-        </div>
-        <div class="hamburger-menu">
-
-        </div>
-        <div class="nav-menu">
+        </div></a>
+        <!-- Botão do menu mobile -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <div id="nav-menu" class="nav-menu">
             <ul>
-                <a href="index.php"><li>Início</li></a>
-                <a href="servicos.php"><li>Serviços</li></a>
-                <a href="sobre.php"><li>Sobre</li></a>
-                <a href="contato.php"><li>Contato</li></a>
+                <li><a href="index.php">Início</a></li>
+                <li><a href="servicos.php">Serviços</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="contato.php">Contato</a></li>
             </ul>
         </div>
 

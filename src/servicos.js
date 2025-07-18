@@ -1,3 +1,52 @@
+let menuAberto = false;
+document.addEventListener('DOMContentLoaded',function(){
+  inicializarMenuMobile();
+})
+
+function inicializarMenuMobile() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function() {
+            toggleMenu();
+        });
+        
+        // Fechar menu ao clicar em links
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (menuAberto) {
+                    toggleMenu();
+                }
+            });
+        });
+        
+        // Fechar menu ao redimensionar para desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768 && menuAberto) {
+                toggleMenu();
+            }
+        });
+    }
+}
+function toggleMenu() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    
+    menuAberto = !menuAberto;
+    
+    if (menuAberto) {
+        navMenu.classList.add('active');
+        menuToggle.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    } else {
+        navMenu.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
 const letras = ['A','u','d','i','c','o','n','e',' ','C','o','n','t','a','d','o','r','e','s'];
 const div = document.getElementById('resultado');
 

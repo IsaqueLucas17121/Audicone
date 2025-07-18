@@ -26,19 +26,19 @@
 </head>
 <body>
     <header>
-        <div class="nav-img">
+        <a class="nav-img" href="index.php"><div class="nav-img">
             <img src="img/ImagemSite.png" alt="Imagem da Audicone Contadores">
             
             <div id="resultado"></div>
             
-        </div>
+        </div></a>
         <!-- Botão do menu mobile -->
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
         </button>
-        <div class="nav-menu">
+        <div id="nav-menu" class="nav-menu">
             <ul>
                 <li><a href="index.php">Início</a></li>
                 <li><a href="servicos.php">Serviços</a></li>

@@ -54,6 +54,11 @@ function enviarWhatsApp(texto) {
   window.open(link, '_blank'); // abre em nova aba
 }
 
+let menuAberto = false;
+document.addEventListener('DOMContentLoaded',function(){
+  inicializarMenuMobile();
+})
+
 function inicializarMenuMobile() {
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
