@@ -63,7 +63,7 @@
             <div class="slide-text">
                 <article class="slide-box show" id="slide-text0">Planejamento financeiro exige atenção aos detalhes: impostos, investimentos e metas bem definidas. Organização é a chave do sucesso contábil.</article>
                 <article class="slide-box" id="slide-text1">Confiança e parceria para impulsionar seus resultados. Conte com a nossa contabilidade para decisões seguras e sólidas.</article>
-                <article class="slide-box" id="slide-text2">Acompanhamos nossos clientes no crescimento e desenvolvimento de suas empresas.</article>
+                <article class="slide-box" id="slide-text2">Acompanhamos nossos clientes no crescimento e desenvolvimento de sua empresa.</article>
             </div>
 
             <button class="slide-button" id="button2">
@@ -132,7 +132,7 @@
             </div>
             <div class="box-mapa2">
                 <h1>Você não precisa sair de casa</h1>
-                <article>Nos da Audicone cuidamos de tudo, basta ligar e descrever seu problema que fazemos o resto</article>
+                <article>Nos da Audicone cuidamos de tudo, basta ligar e descrever seu problema que faremos o resto</article>
                 <span>Atendimento de Segunda a Sexta (8:00 até 17:00)</span>
                 <a href="https://api.whatsapp.com/send?phone=5521983832152" target="_blank"><button>Ligue Agora</button></a>
             </div>

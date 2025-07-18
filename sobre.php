@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Audicone</title>
+    <title>Sobre - Audicone Contadores</title>
 
     <!-- JavaScript -->
     <script src="src/servicos.js" defer></script>
@@ -27,7 +27,7 @@
 
     <header>
         <a class="nav-img" href="index.php"><div class="nav-img">
-            <img src="img/ImagemSite.png" alt="Imagem da Audicone Contadores">
+            <img src="img/ImagemSite.png" alt="Imagem da Audicone Contadores Contadores">
             
             <div id="resultado"></div>
             
@@ -60,10 +60,10 @@
         <div class="back-sobre">
           <div class="fill-sobre">
             <div class="sobre-text">
-                <h1>Bem-Vindo à Audicone</h1>
+                <h1>Bem-Vindo à Audicone Contadores</h1>
                 <span>Conte conosco para transformar sua gestão contábil em uma base sólida para o sucesso.</span>
                 <article>
-                    Na Audicone, acreditamos que a contabilidade vai muito além dos números. 
+                    Na Audicone Contadores, acreditamos que a contabilidade vai muito além dos números. 
                     Nosso compromisso é ser um parceiro estratégico no crescimento do seu negócio, oferecendo soluções personalizadas, eficientes e em conformidade com a legislação.
                 </article>
             </div>
@@ -73,14 +73,14 @@
           <div class="back-visao">
             <h1>Nossa Visão</h1>
             <article>
-              Ser reconhecida como referência em contabilidade consultiva no Brasil, destacando-se pela inovação, confiança e qualidade no atendimento. 
-              Queremos transformar a forma como empresas enxergam a contabilidade: não como obrigação, mas como oportunidade.
+              Ser reconhecida como referência em contabilidade consultiva no Rio de Janeiro, destacando-se pela inovação, confiança, qualidade e parceria no atendimento. 
+              Queremos transformar a forma como as empresas enxergam a contabilidade: não como obrigação, mas como oportunidade.
             </article>
           </div>
           <div class="back-missao">
             <h1>Nossa Missão</h1>
             <article>
-              Oferecer serviços contábeis com excelência, ética e comprometimento, auxiliando empresas e empreendedores a alcançarem estabilidade financeira, segurança fiscal e crescimento sustentável. 
+              Oferecer serviços contábeis com excelência, ética e comprometimento, auxiliando as empresas e empreendedores a alcançarem estabilidade financeira, segurança fiscal e crescimento sustentável. 
               Atuamos como parceiros estratégicos, simplificando processos e promovendo decisões assertivas.
             </article>
           </div>
@@ -89,14 +89,14 @@
 
     <section>
       <div class="back-sobre3">
-        <h1>Porque escolher a Audicone como seu contador?</h1>
+        <h1>Porque escolher a Audicone Contadores como sua consultoria?</h1>
         <article>
           Escolher um contador é mais do que delegar tarefas fiscais — é confiar a gestão do seu negócio a quem entende e se importa com o seu crescimento. 
-          Na Audicone, unimos experiência, tecnologia e atendimento personalizado para oferecer muito mais do que obrigações cumpridas: entregamos tranquilidade e resultados.
+          Na Audicone Contadores, unimos experiência, tecnologia e atendimento personalizado para oferecer muito mais do que obrigações cumpridas: entregamos tranquilidade e resultados.
         </article>
         <article>
-          Porque aqui, contabilidade é levada a sério — com agilidade, clareza e foco em soluções que realmente fazem diferença no seu dia a dia.
-          Na Audicone, você não é apenas mais um cliente: você tem um parceiro ao seu lado, pronto para orientar, organizar e impulsionar seu negócio com segurança.
+          Porque aqui a contabilidade é levada a sério — com agilidade, clareza e foco em soluções que realmente fazem diferença no seu dia a dia.
+          Na Audicone Contadores, você não é apenas mais um cliente: você tem um parceiro ao seu lado, pronto para orientar, organizar e impulsionar seu negócio com segurança.
         </article>
         <span>
           Não somos apenas um escritório de contabilidade. Somos parceiros do seu sucesso.

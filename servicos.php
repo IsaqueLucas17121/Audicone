@@ -153,7 +153,7 @@
             <article>
               Tenha apoio estratégico e evite erros fiscais. Nossa equipe acompanha de perto suas obrigações tributárias.
             </article>
-            <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para departamento pessoal!')">Solicite um Orçamento</span>
+            <span onclick="enviarWhatsApp('Olá, gostaria de solicitar um orçamento para o departamento pessoal!')">Solicite um Orçamento</span>
           </div>
 
           <!-- Box 3 -->
@@ -190,7 +190,7 @@
               Com a assessoria tributária certa, sua empresa economiza nos impostos e evita multas e riscos fiscais.
               Analisamos seu regime tributário, orientamos sobre obrigações legais e garantimos o cumprimento das normas.
             </article>
-            <span onclick="enviarWhatsApp('Olá, gostaria de solicitar orçamento para acessoria tributária!')">Solicite um Orçamento</span>
+            <span onclick="enviarWhatsApp('Olá, gostaria de solicitar um orçamento para a acessoria tributária!')">Solicite um Orçamento</span>
           </div>
         </div>
       </div>
