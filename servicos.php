@@ -208,7 +208,7 @@
       <h2>GOSTOU?</h2>
       <h1>ENTRE EM CONTATO CONOSCO</h1>
       <article>
-        Após o registro, em menos de 24H um de nossos contadores irá retornar por Email ou via Whatsapp.
+        Após o registro, um de nossos contadores irá retornar por Email ou via Whatsapp.
       </article>
     </div>
     <div class="form-input">
@@ -248,6 +248,20 @@
         <li><a href="<?php echo 'servicos.php?a=empresa'?>">Abertura de Empresa</a></li>
         <li><a href="<?php echo 'servicos.php?a=departamento'?>">Departamento Pessoal</a></li>
         <li><a href="<?php echo 'servicos.php?a=acessoria'?>">Acessoria Tributária</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Link Úteis</h4>
+      <ul>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br">Receita Federal</a></li>
+        <li><a target="_blank" href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=">Consuta CNPJ</a></li>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2025/julho">Agenda Tributária</a></li>
+        <li><a target="_blank" href="https://cfc.org.br">CFC</a></li>
+        <li><a target="_blank" href="https://www.crc.org.br/index.asp">CRC-RJ</a></li>      
+        <li><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm">CLT</a></li>     
+        <li><a target="_blank" href="https://www.rcpjrj.com.br">RCPJ-RJ</a></li>
+        <li><a target="_blank" href="https://www.jucerja.rj.gov.br">Junta Comercial-RJ</a></li>
       </ul>
     </div>
 

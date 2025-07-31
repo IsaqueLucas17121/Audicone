@@ -74,7 +74,7 @@
 
     <section>
         <div class="box-back">
-            <h1>Serviços da Audicone</h1>
+            <h1>Serviços da Audicone Contadores</h1>
             <div class="section-box">
                 <div class="box-cards" id="box-card1">
                     <h2>CONTABILIDADE</h2>
@@ -133,7 +133,7 @@
             <div class="box-mapa2">
                 <h1>Você não precisa sair de casa</h1>
                 <article>Nos da Audicone cuidamos de tudo, basta ligar e descrever seu problema que faremos o resto</article>
-                <span>Atendimento de Segunda a Sexta (8:00 até 17:00)</span>
+                <span>Atendimento de Segunda a Sexta (9:00 até 17:00)</span>
                 <a href="https://api.whatsapp.com/send?phone=5521983832152" target="_blank"><button>Ligue Agora</button></a>
             </div>
         </div>
@@ -154,6 +154,19 @@
         <li><a href="<?php echo 'servicos.php?a=empresa'?>">Abertura de Empresa</a></li>
         <li><a href="<?php echo 'servicos.php?a=departamento'?>">Departamento Pessoal</a></li>
         <li><a href="<?php echo 'servicos.php?a=acessoria'?>">Acessoria Tributária</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Link Úteis</h4>
+      <ul>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br">Receita Federal</a></li>
+        <li><a target="_blank" href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=">Consuta CNPJ</a></li>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2025/julho">Agenda Tributária</a></li>
+        <li><a target="_blank" href="https://cfc.org.br">CFC</a></li>
+        <li><a target="_blank" href="https://www.crc.org.br/index.asp">CRC-RJ</a></li>      
+        <li><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm">CLT</a></li>     
+        <li><a target="_blank" href="https://www.rcpjrj.com.br">RCPJ-RJ</a></li>
+        <li><a target="_blank" href="https://www.jucerja.rj.gov.br">Junta Comercial-RJ</a></li>
       </ul>
     </div>
 

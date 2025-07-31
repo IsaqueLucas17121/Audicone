@@ -73,7 +73,7 @@
           <div class="back-visao">
             <h1>Nossa Visão</h1>
             <article>
-              Ser reconhecida como referência em contabilidade consultiva no Rio de Janeiro, destacando-se pela inovação, confiança, qualidade e parceria no atendimento. 
+              Ser reconhecido como referência em contabilidade consultiva no Rio de Janeiro, destacando-se pela inovação, confiança, qualidade e parceria no atendimento personalizado.
               Queremos transformar a forma como as empresas enxergam a contabilidade: não como obrigação, mas como oportunidade.
             </article>
           </div>
@@ -122,6 +122,20 @@
           <li><a href="<?php echo 'servicos.php?a=acessoria'?>">Acessoria Tributária</a></li>
         </ul>
       </div>
+
+      <div class="footer-section">
+      <h4>Link Úteis</h4>
+      <ul>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br">Receita Federal</a></li>
+        <li><a target="_blank" href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=">Consuta CNPJ</a></li>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2025/julho">Agenda Tributária</a></li>
+        <li><a target="_blank" href="https://cfc.org.br">CFC</a></li>
+        <li><a target="_blank" href="https://www.crc.org.br/index.asp">CRC-RJ</a></li>      
+        <li><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm">CLT</a></li>     
+        <li><a target="_blank" href="https://www.rcpjrj.com.br">RCPJ-RJ</a></li>
+        <li><a target="_blank" href="https://www.jucerja.rj.gov.br">Junta Comercial-RJ</a></li>
+      </ul>
+    </div>
 
       <div class="footer-section" id="contatos">
         <h4>Contato</h4>

@@ -79,6 +79,20 @@
       </ul>
     </div>
 
+    <div class="footer-section">
+      <h4>Link Úteis</h4>
+      <ul>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br">Receita Federal</a></li>
+        <li><a target="_blank" href="https://solucoes.receita.fazenda.gov.br/Servicos/cnpjreva/Cnpjreva_Solicitacao.asp?cnpj=">Consuta CNPJ</a></li>
+        <li><a target="_blank" href="https://www.gov.br/receitafederal/pt-br/assuntos/agenda-tributaria/2025/julho">Agenda Tributária</a></li>
+        <li><a target="_blank" href="https://cfc.org.br">CFC</a></li>
+        <li><a target="_blank" href="https://www.crc.org.br/index.asp">CRC-RJ</a></li>      
+        <li><a target="_blank" href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm">CLT</a></li>     
+        <li><a target="_blank" href="https://www.rcpjrj.com.br">RCPJ-RJ</a></li>
+        <li><a target="_blank" href="https://www.jucerja.rj.gov.br">Junta Comercial-RJ</a></li>
+      </ul>
+    </div>
+
     <div class="footer-section" id="contatos">
       <h4>Contato</h4>
       <p><a target="_blank" href="https://api.whatsapp.com/send?phone=5521983832152"><i class="bi bi-whatsapp" id="whats"></i></a></p>
