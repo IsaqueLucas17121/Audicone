@@ -11,6 +11,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços - Audicone</title>
+    <meta name="description" content="Conheça os serviços da Audicone: assessoria tributária, departamento pessoal, contabilidade geral, legalização societária e mais para empresas de todos os portes.">
+
 
     <!-- JavaScript -->
     <script src="src/servicos.js" defer></script>

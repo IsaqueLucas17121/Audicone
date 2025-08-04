@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços Tecnico Audicone Ltda.</title>
+    <meta name="description" content="Aplicamos metodologias modernas para ajudar nossos clientes a alcançarem seus objetivos com segurança, parceria e qualidade nos serviços contábeis.">
+
 
     <!-- JavaScript -->
     <script src="src/script.js" defer></script>

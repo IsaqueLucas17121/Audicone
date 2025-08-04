@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos - Audicone</title>
+    <meta name="description" content="Entre em contato com a Audicone Contadores. Atendimento personalizado e soluções contábeis sob medida.">
 
     <!-- JavaScript -->
     <script src="src/servicos.js" defer></script>
@@ -57,7 +58,7 @@
 
     <section>
         <div class='back-pdf'>
-            <img src="img\Cartão Digital - Audiocne Contadores.pdf.png" alt="imagem Cartão Audicone">
+             <iframe src="img\Cartao Digital - Audiocne Contadores.pdf.pdf" frameborder="0" width="100%" height="100%"></iframe>
         </div>
     </section>
 

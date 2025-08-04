@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre - Audicone Contadores</title>
+    <meta name="description" content="Conheça os consultores da Audicone Contadores e nossa abordagem consultiva em contabilidade moderna.">
 
     <!-- JavaScript -->
     <script src="src/servicos.js" defer></script>
