@@ -1,5 +1,4 @@
 # Audicone
 Este e o repositório para um site de contabilidade em PHP
 
-
-Index(Página Inicial) - feito principalmente utilizando html e css
+Projetado para atender as necessidades da Audicone e com espaço para crescimento
